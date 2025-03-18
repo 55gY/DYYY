@@ -1986,7 +1986,7 @@ static CGFloat currentScale = 1.0;
         }
     }
     if ([self.accessibilityLabel isEqualToString:@"left"]) {
-        NSString *scaleValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"DYYYElementScale"];
+        NSString *scaleValue = [[NSUserDefaults standardUserDefaults] objectForKey:@"DYYYElementScale_bb"];
         if (scaleValue.length > 0) {
             CGFloat scale = [scaleValue floatValue];
             if (scale > 0 && scale != 1.0) {
