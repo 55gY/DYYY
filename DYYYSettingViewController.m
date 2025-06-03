@@ -73,7 +73,7 @@ typedef NS_ENUM(NSInteger, DYYYSettingItemType) {
     
     // 如果快捷倍速数值未设置，设置默认值
     if (![defaults objectForKey:@"DYYYSpeedSettings"]) {
-        [defaults setObject:@"1.0,1.25,1.5,2.0" forKey:@"DYYYSpeedSettings"];
+        [defaults setObject:@"1.0,1.1.3,1.6,3.0,5.0,10.0" forKey:@"DYYYSpeedSettings"];
     }
     
     // 如果按钮大小未设置，设置默认值
@@ -656,7 +656,7 @@ typedef NS_ENUM(NSInteger, DYYYSettingItemType) {
                                                                    message:nil
                                                             preferredStyle:UIAlertControllerStyleActionSheet];
     
-    NSArray *speeds = @[@0.75, @1.0, @1.25, @1.5, @2.0, @2.5, @3.0];
+    NSArray *speeds = @[@0.75, @1.0, @1.3, @1.6, @3.0, @5.0, @10.0];
     for (NSNumber *speed in speeds) {
         UIAlertAction *action = [UIAlertAction actionWithTitle:[NSString stringWithFormat:@"%.2f", speed.floatValue]
                                                         style:UIAlertActionStyleDefault
